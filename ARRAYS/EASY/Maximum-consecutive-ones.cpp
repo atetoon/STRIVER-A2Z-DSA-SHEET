@@ -5,7 +5,7 @@ int consecOnes(vector<int> &a, int n) {
     int cnt=0;
     int ans = 0;
 
-    for(int i = 0; i<n-1; i++) {
+    for(int i = 0; i<n; i++) {
         if(a[i] == 1) { 
             cnt++;
             ans = max(ans, cnt);
@@ -13,7 +13,7 @@ int consecOnes(vector<int> &a, int n) {
             cnt = 0;
         }
     }
-    return ans;
+    return ans; 
 }
 
 int main() {
