@@ -43,14 +43,27 @@ int missingNum2(vector<int> &a, int n) {
     }
 
     long long expSum = (n *1LL* (n+1))/2;
-    
+
     return expSum - sum;
+}
+
+//optimal 
+int missingNum3(vector<int> &a, int n) {
+    int xor1 = 0, xor2 = 0;
+
+    for(int i = 0; i<n; i++) {
+        xor2^=a[i];
+        xor1^=i+1;
+    }
+    xor1^=n+1;
+
+    return xor1^xor2;
 }
 
 int main() {
     int n; cin >> n;
     vector<int> v(n);
     for(int i = 0; i<n; i++) cin >> v[i];
-    cout << missingNum1(v, n);
+    cout << missingNum3(v, n);
     return 0;
 }
