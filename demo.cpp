@@ -9,7 +9,7 @@ void selection_sort(int arr[], int n) {
         }
         swap(arr[mini], arr[i]);
     }
-}
+};
 
 void bubble_sort(int arr[], int n) {
     for(int i = n-1;i>0;i--) {
