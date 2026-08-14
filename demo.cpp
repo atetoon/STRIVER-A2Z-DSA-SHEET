@@ -102,5 +102,5 @@ int main() {
     for(int i = 0;i<n;i++) cin>>v[i];
     quick_sort(v, 0, n-1);
 
-    for(int i = 0;i<n;i++) cout<<v[i] << " "; a
+    for(int i = 0;i<n;i++) cout<<v[i] << " ";
 }
