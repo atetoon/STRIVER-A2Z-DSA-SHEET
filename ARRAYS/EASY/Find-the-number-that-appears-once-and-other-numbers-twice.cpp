@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//brute force
 int numOnce(int n, vector<int> &arr) {
     for(int i = 0; i<n; i++) {
         int num = arr[i];
